@@ -45,7 +45,7 @@ LangChain’s **runnables** offer modular and flexible components to define and 
   result = runnable_map.invoke({"double": 3, "square": 4, "some":5})
 
   print(result)
-  # Expected Output: 'double': 6, 'square': 16, 'some': {'double': 3, 'square': 4, 'some': 5}}
+  # Expected Output: {'double': 6, 'square': 16, 'some': {'double': 3, 'square': 4, 'some': 5}}
   ```
 - **Use Case**: Processing dictionaries where different keys require different transformations (e.g., calculations on multiple metrics, data parsing).
 

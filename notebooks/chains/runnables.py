@@ -27,7 +27,7 @@ runnable_map = RunnableMap({
 result = runnable_map.invoke({"double": 3, "square": 4, "some":5})
 
 print(result)
-# Expected Output: 'double': 6, 'square': 16, 'some': {'double': 3, 'square': 4, 'some': 5}}
+# Expected Output: {'double': 6, 'square': 16, 'some': {'double': 3, 'square': 4, 'some': 5}}
 
 
 # runnable sequence
