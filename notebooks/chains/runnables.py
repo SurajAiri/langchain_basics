@@ -8,10 +8,12 @@ print(result)
 
 # runnable each
 from langchain_core.runnables.base import RunnableEach
+from langchain_core.runnables import RunnableLambda
 
 runnable_each = RunnableEach(bound=RunnableLambda(lambda x: x * 2))
 result = runnable_each.invoke([1, 2, 3])
 print(result)
+# Expected Output: [2, 4, 6]
 
 # runnable map
 from langchain_core.runnables import RunnableMap

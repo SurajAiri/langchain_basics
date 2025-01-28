@@ -24,6 +24,7 @@ LangChain’s **runnables** offer modular and flexible components to define and 
   runnable_each = RunnableEach(bound=RunnableLambda(lambda x: x * 2))
   result = runnable_each.invoke([1, 2, 3])
   print(result)
+  # Expected Output: [2, 4, 6]
   ```
 - **Use Case**: Processing lists where each item needs the same operation (e.g., formatting each element, adding prefixes, etc.).
 
